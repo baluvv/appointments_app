@@ -1,0 +1,31 @@
+.list-item {
+  border-width: 1px;
+  border-color: #b5b7c4;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-right: 18px;
+  margin-bottom: 18px;
+  width: 20%;
+  border-style: solid;
+  border-radius: 8px;
+}
+.list-item-container {
+  display: flex;
+  flex-direction: column;
+}
+.title-type {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+}
+.day {
+  color: #b5b7c4;
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+.star-button {
+  background-color: transparent;
+  border-width: 0px;
+}
