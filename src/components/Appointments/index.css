@@ -100,3 +100,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 767px) {
+  .image {
+    display: none;
+  }
+  .form-container {
+    width: 90%;
+  }
+  .list-container {
+    flex-direction: column;
+  }
+}

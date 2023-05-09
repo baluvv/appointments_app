@@ -20,21 +20,24 @@ class Appointments extends Component {
   onAddAppointment = event => {
     event.preventDefault()
     const {title, date} = this.state
-    const newAppointment = {
-      id: uuidv4(),
-      title,
-      date,
-      isFavorite: false,
+    if (title !== '' && date !== '') {
+      const newAppointment = {
+        id: uuidv4(),
+        title,
+        date,
+        isFavorite: false,
+      }
+      this.setState(prevState => ({
+        initialAppointmentsList: [
+          ...prevState.initialAppointmentsList,
+          newAppointment,
+        ],
+        title: '',
+        date: '',
+      }))
+    } else {
+      alert('please enter title and date')
     }
-
-    this.setState(prevState => ({
-      initialAppointmentsList: [
-        ...prevState.initialAppointmentsList,
-        newAppointment,
-      ],
-      title: '',
-      date: '',
-    }))
   }
 
   toggleIsFavoriteIcon = id => {

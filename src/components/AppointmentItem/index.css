@@ -29,3 +29,9 @@
   background-color: transparent;
   border-width: 0px;
 }
+
+@media screen and (max-width: 767px) {
+  .list-item {
+    width: 100%;
+  }
+}
